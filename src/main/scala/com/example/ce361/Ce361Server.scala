@@ -35,7 +35,7 @@ object Ce361Server {
       _ <-
         EmberServerBuilder.default[F]
           .withHost(ipv4"0.0.0.0")
-          .withPort(port"8080")
+          .withPort(port"8071")
           .withHttpApp(finalHttpApp)
           .withShutdownTimeout(0.millis)
           .build

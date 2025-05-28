@@ -16,7 +16,7 @@ class ReproSpec extends CatsEffectSuite {
     EmberClientBuilder.default[IO].build.use { client =>
       0.to(1000).toList.traverse_ { _ =>
         Ce361Server.run[IO].surround {
-          client.expect[String](uri"http://localhost:8080/hello/world")
+          client.expect[String](uri"http://localhost:8071/hello/world")
         }
       }
     }
@@ -27,7 +27,7 @@ class ReproSpec extends CatsEffectSuite {
       0.to(10).toList.traverse_ { _ =>
         Ce361Server.run[IO].surround {
           client
-            .expect[String](uri"http://localhost:8080/joke")
+            .expect[String](uri"http://localhost:8071/joke")
             .flatTap(IO.println)
         }
       }
