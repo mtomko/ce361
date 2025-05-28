@@ -1,6 +1,6 @@
 import org.typelevel.scalacoptions.ScalacOptions
 
-val CatsEffectVersion = "3.6.0"
+val CatsEffectVersion = "3.6.1"
 val Fs2Version = "3.12.0"
 val Http4sVersion = "0.23.30"
 val CirceVersion = "0.14.13"
