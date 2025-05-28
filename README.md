@@ -3,7 +3,7 @@ Run `sbt test` to (hopefully) reproduce the problem
 
 ## example output
 ```shell
-sbt test
+$ sbt test
 [info] welcome to sbt 1.10.11 (GraalVM Community Java 21.0.2)
 [info] loading settings for project global-plugins from plugins.sbt...
 [info] loading global plugins from /Users/mtomko/.sbt/1.0/plugins
