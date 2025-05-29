@@ -4,7 +4,7 @@ val CatsEffectVersion = "3.6.1"
 val Fs2Version = "3.12.0"
 val Http4sVersion = "0.23.30"
 val CirceVersion = "0.14.13"
-val MunitVersion = "1.1.0"
+val MunitVersion = "1.1.1"
 val LogbackVersion = "1.5.18"
 val MunitCatsEffectVersion = "2.1.0"
 val Scala2Version = "2.13.16"
@@ -40,5 +40,6 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "kind-projector" % "0.13.3" cross CrossVersion.full
     ),
     addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1"),
-    scalacOptions ++= Seq("-Xsource:3")
+    scalacOptions ++= Seq("-Xsource:3"),
+    Test / fork := true
   )
